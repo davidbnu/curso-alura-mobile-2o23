@@ -1,0 +1,39 @@
+.banner {
+    background: var(--azul-degrade); /*Utilizamos o background pois a cor é a linear-gradiente. Se fosse uma cor padrão, poderia utilizar apenas 
+    o backgroud-color*/
+    color: var(--branco);
+    text-align: center; 
+    padding: 2.5em 2em;
+}
+
+.banner__titulo {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.banner__texto {
+    font-weight: 500;
+    margin: 1em 0;
+}
+
+.banner__pesquisa {
+    background-color: transparent;
+    border: 1px solid var(--branco);
+    color: var(--branco);
+    border-radius: 24px;
+    width: 100%;
+    padding: 1em;
+}
+
+/*Aqui aplicamos a fonte ao placeholder.
+A fonte aplicada no body as propriedades dos elementos, como placehold. Apenas os próprios elementos*/
+.banner__pesquisa::placeholder {
+    background: url("../img/Lupa.svg");
+    background-position: 1em;
+    background-repeat: no-repeat;
+    color: var(--branco);
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 400;
+}
